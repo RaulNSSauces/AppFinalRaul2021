@@ -29,13 +29,13 @@
                 $oUsuario=new Usuario($usuarioDatos->T01_CodUsuario,
                                       $usuarioDatos->T01_Password,
                                       $usuarioDatos->T01_DescUsuario, 
-                                      $usuarioDatos->T01_NumConexiones,
+                                      $usuarioDatos->T01_NumConexiones+1,
                                       $usuarioDatos->T01_FechaHoraUltimaConexion,
                                       $usuarioDatos->T01_Perfil,
                                       $usuarioDatos->T01_ImagenUsuario);
                 
                 $sqlUltimaConexion="UPDATE T01_Usuario set T01_NumConexiones = T01_NumConexiones+1, T01_FechaHoraUltimaConexion=? where T01_CodUsuario=?";
-                $resultadoUltimaConexion=DB::ejecutarConsulta($sqlUltimaConexion, [time(), $codUsuario]);
+                DB::ejecutarConsulta($sqlUltimaConexion, [time(), $codUsuario]);
             }
             return $oUsuario;
         }
@@ -129,6 +129,26 @@
                 $comprobarUsuario=false;
             }
             return $comprobarUsuario;
+        }
+        public static function modificarPassword($codUsuario, $nuevaPassword){
+            $sql="UPDATE T01_Usuario SET T01_Password=? WHERE T01_CodUsuario=?";
+            $encriptarPassword=hash("sha256", ($codUsuario.$nuevaPassword));
+            $resultado=DB::ejecutarConsulta($sql, [$encriptarPassword, $codUsuario]);
+            
+            $datos="SELECT * FROM T01_Usuario where T01_CodUsuario=?";
+            $resultadoDatos=DB::ejecutarConsulta($datos,[$codUsuario]);
+            
+            if($resultadoDatos->rowCount()>0){
+                $usuarioDatos=$resultadoDatos->fetchObject();
+                $oUsuario=new Usuario($usuarioDatos->T01_CodUsuario,
+                                      $usuarioDatos->T01_Password,
+                                      $usuarioDatos->T01_DescUsuario, 
+                                      $usuarioDatos->T01_NumConexiones,
+                                      $usuarioDatos->T01_FechaHoraUltimaConexion,
+                                      $usuarioDatos->T01_Perfil,
+                                      $usuarioDatos->T01_ImagenUsuario);
+            }
+            return $oUsuario;
         }
     }
 ?>

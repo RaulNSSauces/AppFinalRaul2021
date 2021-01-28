@@ -221,6 +221,26 @@ Search.appendIndex(
             "summary": "validarCodNoExiste\u0028\u0029\nM\u00E9todo\u0020que\u0020comprueba\u0020si\u0020el\u0020c\u00F3digo\u0020del\u0020usuario\u0020ya\u0020existe\u0020en\u0020la\u0020base\u0020de\u0020datos.",
             "url": "classes/UsuarioPDO.html#method_validarCodNoExiste"
         },                {
+            "fqsen": "\\UsuarioPDO\u003A\u003AmodificarPassword\u0028\u0029",
+            "name": "modificarPassword",
+            "summary": "",
+            "url": "classes/UsuarioPDO.html#method_modificarPassword"
+        },                {
+            "fqsen": "\\Rest",
+            "name": "Rest",
+            "summary": "Class\u0020Rest.",
+            "url": "classes/Rest.html"
+        },                {
+            "fqsen": "\\Rest\u003A\u003AinstalacionesDeportivas\u0028\u0029",
+            "name": "instalacionesDeportivas",
+            "summary": "instalacionesDeportivas\u0028\u0029.",
+            "url": "classes/Rest.html#method_instalacionesDeportivas"
+        },                {
+            "fqsen": "\\Rest\u003A\u003AsevicioAPOD\u0028\u0029",
+            "name": "sevicioAPOD",
+            "summary": "servicioAPOD\u0028\u0029\nM\u00E9todo\u0020que\u0020muestra\u0020una\u0020foto\u0020y\u0020una\u0020descripci\u00F3n\u0020de\u0020la\u0020Nasa\u0020seg\u00FAn\u0020el\u0020d\u00EDa.",
+            "url": "classes/Rest.html#method_sevicioAPOD"
+        },                {
             "fqsen": "\\",
             "name": "\\",
             "summary": "",

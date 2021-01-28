@@ -16,6 +16,18 @@
         exit;
     }
     
+    if(isset($_REQUEST["cambiar"])){
+        $_SESSION["paginaEnCurso"] = $controlador["cambiarPassword"];
+        header("Location: index.php");
+        exit;
+    }
+    
+    if(isset($_REQUEST["rest"])){//Si el usuario pulsa en el botón de eliminar usuario.
+        $_SESSION["paginaEnCurso"] = $controlador["rest"];//Almaceno en la variable de sesión la ruta del controlador de borrar cuenta.
+        header("Location: index.php");//Recargo el index.
+        exit;
+    }
+    
     if(isset($_REQUEST["cerrarSesion"])){//Si el usuario pulsa el botón de cerrar sesión.
         session_destroy();//Destruyo la sesión.
         header("Location: index.php");//Recargo el index.

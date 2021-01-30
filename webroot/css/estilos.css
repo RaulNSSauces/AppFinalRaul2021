@@ -1,0 +1,229 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, Verdana;
+}
+body{
+    background-color: #eeeeee;
+}
+main{
+    min-height: 80vh;
+    height: auto;
+    position: relative;
+    padding: 2%;
+}
+/*
+HEADER
+*/
+.cabeza{
+    background-color: white;
+    padding: 30px;
+    padding-left: 20%;
+    height: 10vh;
+    font-size: 12px;
+    border-bottom: 1px solid #c0c0c0;
+}
+/*
+FORMULARIOS
+*/
+.loginbox{
+    width: 650px; height: 650px;
+    background: white;
+    color: #1769d1;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 130px 80px;
+    border-radius: 30px;
+    border: 1px solid #c0c0c0;
+}
+.loginbox input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.loginbox input[type="text"], input[type="password"]{
+    border: none;
+    border-bottom: 2px solid #1769d1;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color:gray;
+    font-size: 16px;
+}
+/*
+V EDITAR PERFIL
+*/
+.pEditarPerfil{
+    position: relative;
+    top: -50px;
+    font-size: 30px;
+    color:#1c2833;
+}
+/*
+V LOGIN
+*/
+.pLogin{
+    position: relative;
+    top: -50px;
+    font-size: 50px;
+    text-align: center;
+}
+.btnIniciarSesion{
+    border:none;
+    outline: none;
+    height: 60px;
+    background: #e0e0e0;
+    color:black;
+    font-size: 18px;
+    border-radius: 50px;
+    margin-left: 110px;
+    margin-top: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+.btnRegistro{
+    border:none;
+    outline: none;
+    height: 60px;
+    background: #1769d1;
+    color:white;
+    font-size: 18px;
+    border-radius: 50px;
+    margin-left: 111px;
+    margin-top: 20px;
+    padding-left: 90px;
+    padding-right: 90px;
+}
+.ver1{
+    position: absolute;
+    left:10%;
+    bottom: 45%;
+    color:#7d7d7d;
+}
+.ver1 a{
+    color:#7d7d7d;
+    text-decoration: none;
+}
+.ver2{
+    position: absolute;
+    left: 77%;
+    bottom: 48%;
+    color:#7d7d7d;
+}
+.ver2 a{
+    color:#7d7d7d;
+    text-decoration: none;
+}
+/*
+V REGISTRO
+*/
+.pRegistro{
+    position: relative;
+    top: -50px;
+    font-size: 30px;
+    color:#1c2833;
+}
+.btnAtras{
+    border:none;
+    outline: none;
+    height: 40px;
+    background: #e0e0e0;
+    color:black;
+    font-size: 18px;
+    border-radius: 50px;
+    margin-top: 5px;
+    padding-left: 90px;
+    padding-right: 90px;
+}
+.btnAceptar{
+    border:none;
+    outline: none;
+    height: 40px;
+    background: #1769d1;
+    color:white;
+    font-size: 18px;
+    border-radius: 50px;
+    margin-top: 5px;
+    margin-left: 13px;
+    padding-left: 90px;
+    padding-right: 90px;
+}
+/*
+V INICIO
+*/
+.vInicio{
+    text-align: center;
+    padding-top: 200px;
+    font-size: 20px;
+    color: #7d7d7d;
+}
+.btnCerrarSesion{
+    background-color: white;
+    border:none;
+    position: absolute;
+    top: -7.8%;
+    left: 70%;
+}
+.btnEliminar{
+    border:none;
+    background-color: white;
+    position: absolute;
+    top: -7.9%;
+    left: 65%;
+}
+.btnEditarPerfil{
+    border:none;
+    background-color: white;
+    position: absolute;
+    top: -8%;
+    left: 60%;
+}
+.btnPassword{
+    border:none;
+    background-color: white;
+    position: absolute;
+    top: -7.9%;
+    left: 55%;
+}
+.btnRest{
+    border:none;
+    background-color: white;
+    position: absolute;
+    top: -7.8%;
+    left: 50%;
+}
+/*
+MANTENIMIENTO DE DEPARTAMENTOS
+*/
+/*
+FOOTER
+*/
+footer{
+    width: 100%;
+    color: #a2a2a2;
+    font-weight: bold;
+    height: 10vh;
+    padding-left: 20%;
+}
+footer p{
+    color: #787878;
+}
+.iconos{
+    position: relative;
+    left: 200px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-right: 1px solid  #c6c6c6 ;
+    height: min-content;
+}
+.iconos7{
+    position: relative;
+    left: 200px;
+    padding-right: 10px;
+    padding-left: 10px;
+    height: min-content;
+}
+footer table tr td a{
+    text-decoration: none;
+    color: #b4b4b4;
+}

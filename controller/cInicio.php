@@ -28,6 +28,12 @@
         exit;
     }
     
+    if(isset($_REQUEST["mtoDepartamentos"])){
+        $_SESSION["paginaEnCurso"]=$controlador["mtoDepartamentos"];
+        header("Location: index.php");
+        exit;
+    }
+    
     if(isset($_REQUEST["cerrarSesion"])){//Si el usuario pulsa el botón de cerrar sesión.
         session_destroy();//Destruyo la sesión.
         header("Location: index.php");//Recargo el index.
@@ -36,7 +42,7 @@
     //Saco todos los campos necesarios de la base de datos almacenándolos en variables.
     $numConexiones = $_SESSION['usuarioDAW203LoginLogoffMulticapa']->getNumConexiones();
     $descUsuario = $_SESSION['usuarioDAW203LoginLogoffMulticapa']->getDescUsuario();
-    $fechaHoraUltimaConexion = $_SESSION['usuarioDAW203LoginLogoffMulticapa']->getFechaHoraUltimaConexion();
+    $fechaHoraUltimaConexion = $_SESSION['fechaHoraUltimaConexionAnterior'];
     
     $vista = $vistas['inicio'];//Almaceno en una variable la vista que quiero cargar.
     require_once $vistas['layout'];//Incluyo la vista del layout.

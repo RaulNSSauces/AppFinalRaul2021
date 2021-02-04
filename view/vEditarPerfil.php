@@ -32,7 +32,7 @@
         <br>
             <div>
                 <label for="fechaHoraUltimaConexion">Fecha y Hora de la última conexión</label>
-                <input type="text" name="fechaHoraUltimaConexion" value="<?php echo date("d-m-Y H:i:s",$fechaHoraUltimaConexion)?>" readonly>
+                <input type="text" name="fechaHoraUltimaConexion" value="<?php echo date("d-m-Y H:i:s",$fechaHoraUltimaActual)?>" readonly>
             </div>
         <br>
             <div>

@@ -1,6 +1,6 @@
 <?php
     if(isset ($_REQUEST["registrate"])){//Si el usuario pulsa el botón de registrarse.
-        $_SESSION["paginaEnCurso"] = $controlador["registro"];//Almaceno en la sesión la ruta del controlador del registro.
+        $_SESSION["paginaEnCurso"] = $controlador["registro"];//Guardo en la variable de sesión la ruta del controlador del registro.
         header("Location: index.php");//Recargo el index y redirijo al usuario al registro.
         exit;
     }else{//Si no
@@ -12,7 +12,7 @@
                "password" => null];
     
     if(isset($_REQUEST["iniciarSesion"])){//Si el usuario le da al botón de iniciar sesión.
-        $aErrores["codUsuario"]= validacionFormularios::comprobarAlfaNumerico($_REQUEST["codUsuario"], 16, 3, OBLIGATORIO);//Valido que el campo de código de usuario lo ha escrito correctamente.
+        $aErrores["codUsuario"]= validacionFormularios::comprobarAlfaNumerico($_REQUEST["codUsuario"], 8, 3, OBLIGATORIO);//Valido que el campo de código de usuario lo ha escrito correctamente.
         $aErrores["password"] = validacionFormularios::validarPassword($_REQUEST["password"], 8, 1, 1, OBLIGATORIO);//Valido que el campo contraseña lo ha escrito correctamente.
     
         foreach($aErrores as $campo => $error){//Recorro el array de errores.
@@ -26,10 +26,11 @@
     }
     
     if($entradaOk){//Si la entrada es Ok.
-        $oUsuario= usuarioPDO::validarUsuario($_REQUEST["codUsuario"], $_REQUEST["password"]);//Ejecuto el método validarUsuario que devuelve un objeto.
+        $aValidarUsuario= usuarioPDO::validarUsuario($_REQUEST["codUsuario"], $_REQUEST["password"]);//Ejecuto el método validarUsuario que devuelve un objeto.
         
-        if(isset($oUsuario)){
-            $_SESSION["usuarioDAW203LoginLogoffMulticapa"]=$oUsuario;//Almaceno en la sesión el objeto del resultado de la consulta.
+        if(isset($aValidarUsuario)){
+            $_SESSION["usuarioDAW203LoginLogoffMulticapa"]=$aValidarUsuario[0];//Almaceno en la sesión el objeto del resultado de la consulta.
+            $_SESSION["fechaHoraUltimaConexionAnterior"] = $aValidarUsuario[1];
             $_SESSION["paginaEnCurso"] = $controlador["inicio"];//Almaceno en la sesión la página en curso con la ruta del controlador del inicio.
             header('Location: index.php');//Recargo el index y redirijo al usuario al inicio.
             exit;

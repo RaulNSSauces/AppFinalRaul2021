@@ -192,9 +192,98 @@ V INICIO
     top: -7.8%;
     left: 50%;
 }
+.btnMto{
+    border:none;
+    background-color:white;
+    position: absolute;
+    top: -8%;
+    left: 45%;
+}
 /*
 MANTENIMIENTO DE DEPARTAMENTOS
 */
+.tMto{
+    position: absolute;
+    left: 15%;
+    top:15%;
+    width: 1400px;
+}
+.thMto{
+    background-color:#aab7b8;
+    padding: 5px;
+    color:white;
+}
+.buscarMto{
+    position: absolute;
+    top:7%;
+    left:24.1%;
+}
+.buscarMto input{
+    border-radius: 50px;
+    height:30px;
+    position: absolute;
+    left: 120%;
+}
+.btnMtoBuscar{
+    border:none;
+    outline: none;
+    height: 40px;
+    background: #1769d1;
+    color:white;
+    font-size: 18px;
+    border-radius: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: absolute;
+    left: 220%;
+    top:-20%;
+}
+.btnacb{
+    border:none;
+    background-color: transparent;
+}
+.btnMtoVolver{
+    border:none;
+    outline: none;
+    height: 40px;
+    background: #1769d1;
+    color:white;
+    font-size: 18px;
+    border-radius: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+    position: absolute;
+    bottom: 60px;
+    left: 75%;
+}
+.btnMtoImportar{
+    border:none;
+    outline: none;
+    height: 40px;
+    background: #1769d1;
+    color:white;
+    font-size: 18px;
+    border-radius: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+    position: absolute;
+    bottom: 60px;
+    left: 20%;
+}
+.btnMtoExportar{
+    border:none;
+    outline: none;
+    height: 40px;
+    background: #1769d1;
+    color:white;
+    font-size: 18px;
+    border-radius: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+    position: absolute;
+    bottom: 60px;
+    left: 30%;
+}
 /*
 FOOTER
 */
@@ -203,14 +292,14 @@ footer{
     color: #a2a2a2;
     font-weight: bold;
     height: 10vh;
-    padding-left: 20%;
+    padding-left: 10%;
 }
 footer p{
     color: #787878;
 }
 .iconos{
     position: relative;
-    left: 200px;
+    left: 50px;
     padding-right: 10px;
     padding-left: 10px;
     border-right: 1px solid  #c6c6c6 ;
@@ -218,7 +307,7 @@ footer p{
 }
 .iconos7{
     position: relative;
-    left: 200px;
+    left: 50px;
     padding-right: 10px;
     padding-left: 10px;
     height: min-content;

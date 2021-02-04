@@ -7,7 +7,7 @@ if(isset ($_REQUEST["cancelar"])){//Si el usuario pulsa en el botón de cancelar
 
 if(isset($_REQUEST["borrar"])){//Si el usuario pulsa en el botón de borrar.
     $comprobarUsuario=UsuarioPDO::borrarUsuario($_REQUEST["codUsuario"]);//Ejecuto el metodo borrarUsuario().
-    $_SESSION["usuarioDAW203LoginLogoffMulticapa"]=$comprobarUsuario;
+    $_SESSION["usuarioDAW203LoginLogoffMulticapa"]=$comprobarUsuario;//Guardo en la variable de sesión el resultado de la consulta.
     $_SESSION["paginaEnCurso"]=$controlador["login"];//Guardo en la variable de sesión la ruta del controlador del login.
     header("Location: index.php");//Recargo el index.
     exit;

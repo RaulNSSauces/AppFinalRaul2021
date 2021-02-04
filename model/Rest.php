@@ -4,7 +4,7 @@
  * Clase compuesta de métodos que hacen uso de apis a través de otros servidores.
  * @author Raúl Núñez.
  * @since 1.0.
- * @copyright (c) 21-01-2021.
+ * @copyright (c) 04-02-2021.
  * @version 1.0.
  */
 class Rest{
@@ -34,10 +34,21 @@ class Rest{
      * servicioAPOD()
      * Método que muestra una foto y una descripción de la Nasa según el día.
      * @param type Date $fecha fecha que le paso como parámetro
-     * @return String type Devuelve un String codificado a Json.
+     * @return type String Devuelve un String codificado a Json.
      */
     public static function sevicioAPOD($fecha) {
         return json_decode(file_get_contents("https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=$fecha"), true);        
+    }
+    /**
+     * calculadora()
+     * Método que realiza operaciones matemáticas.
+     * @param type int $tipo Tipo de operación, suma, resta, multiplicación o división.
+     * @param type float $n1 Primer número que le paso como parámetro.
+     * @param type float $n2 Segundo número que le paso como parámetro.
+     * @return type float Devuelve un float codificado a Json.
+     */
+    public static function calculadora($tipo, $n1, $n2){
+        return json_decode(file_get_contents("http://daw203.ieslossauces.es/AppFinalRaul2021/api/calculadora.php?operaciones=$tipo&n1=$n1&n2=$n2"), true);
     }
 }
 ?>

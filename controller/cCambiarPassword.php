@@ -42,5 +42,4 @@ if(isset ($_REQUEST["cancelar"])){//Si el usuario pulsa el botón de cancelar.
 
 $vista = $vistas["cambiarPassword"]; //Almaceno en una variable la vista que quiero cargar.
 require_once $vistas['layout']; //Incluyo la vista del layout.
-
 ?>

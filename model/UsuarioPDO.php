@@ -19,6 +19,7 @@
         
         public static function validarUsuario($codUsuario, $password){
             $oUsuario=null;
+            $fechaHoraUltimaConexion=null;
             
             $sql="SELECT * FROM T01_Usuario where T01_CodUsuario=? and T01_Password=?";
             $encriptarPassword=hash("sha256", ($codUsuario.$password));
@@ -26,18 +27,23 @@
             
             if($resultado->rowCount()>0){
                 $usuarioDatos=$resultado->fetchObject();
-                $oUsuario=new Usuario($usuarioDatos->T01_CodUsuario,
-                                      $usuarioDatos->T01_Password,
-                                      $usuarioDatos->T01_DescUsuario, 
-                                      $usuarioDatos->T01_NumConexiones+1,
-                                      $usuarioDatos->T01_FechaHoraUltimaConexion,
-                                      $usuarioDatos->T01_Perfil,
-                                      $usuarioDatos->T01_ImagenUsuario);
+                $fechaHoraUltimaConexion = $usuarioDatos->T01_FechaHoraUltimaConexion;
                 
                 $sqlUltimaConexion="UPDATE T01_Usuario set T01_NumConexiones = T01_NumConexiones+1, T01_FechaHoraUltimaConexion=? where T01_CodUsuario=?";
-                DB::ejecutarConsulta($sqlUltimaConexion, [time(), $codUsuario]);
+                $resultadoUltimaConexion = DB::ejecutarConsulta($sqlUltimaConexion, [time(), $codUsuario]);
+                
+                $sqlDatosUsuario = "SELECT * FROM T01_Usuario where T01_CodUsuario=?";
+                $oDatosUsuario = DB::ejecutarConsulta($sqlDatosUsuario, [$codUsuario]);
+                $resultadoUsuarioActualizado = $oDatosUsuario -> fetchObject();
+                $oUsuario = new Usuario($resultadoUsuarioActualizado->T01_CodUsuario,
+                                        $resultadoUsuarioActualizado->T01_Password,
+                                        $resultadoUsuarioActualizado->T01_DescUsuario, 
+                                        $resultadoUsuarioActualizado->T01_NumConexiones,
+                                        $resultadoUsuarioActualizado->T01_FechaHoraUltimaConexion,
+                                        $resultadoUsuarioActualizado->T01_Perfil,
+                                        $resultadoUsuarioActualizado->T01_ImagenUsuario);
             }
-            return $oUsuario;
+            return [$oUsuario, $fechaHoraUltimaConexion];
         }
         /**
          * altaUsuario()

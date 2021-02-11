@@ -1,5 +1,5 @@
 # AppFinalRaul2021
-Módulo: DEWES
+Módulo: DWES
 
 Descripción: Aplicación Final Raúl 2021
 Fecha Inicio: 11/01/2021

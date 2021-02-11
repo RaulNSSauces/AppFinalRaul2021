@@ -26,5 +26,6 @@
         <button class="btnRest" type="submit" name="rest"><img src="webroot/media/rest.png" width="30px" height="30px"></button>
         <button class="btnPassword" type="submit" name="cambiar"><img src="webroot/media/candado.png" width="30px" height="30px"></button>
         <button class="btnMto" type="submit" name="mtoDepartamentos"><img src="webroot/media/mto.png" width="30px" height="30px"></button>
+        <button class="btnAjax" type="submit" name="ajax"><img src="webroot/media/ajax.png" width="30px" height="30px"></button>
     </form>
 </main>

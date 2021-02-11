@@ -27,10 +27,12 @@
                 <input type="text" name="fechaBajaDepartamento">
             </div>
         <br>
-            <div>
-                <button class="btnAtras" type="submit" name="cancelar">Atrás</button>
-                <button class="btnAceptar" type="submit" name="cambiar">Aceptar</button>
+            <div class="contenedorAceptar">
+                <button class="btnAceptar" type="submit" name="eliminar">Aceptar</button>
             </div>
     </form>
+        <form class="contenedorAtras">
+            <button class="btnAtras" type="submit" name="cancelar">Atrás</button>
+        </form>
     </div>
 </main>

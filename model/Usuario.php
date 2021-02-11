@@ -10,44 +10,44 @@
     class Usuario{
         /**
          * Código del usuario.
-         * @var type String.
+         * @var String.
          */
         private $codUsuario;
         /**
          * Contraseña del usuario.
-         * @var type String.
+         * @var String.
          */
         private $password;
         /**
          * Descripción del usuario.
-         * @var type String.
+         * @var String.
          */
         private $descUsuario;
         /**
          * Número de veces que se ha conectado un usuario.
-         * @var type int.
+         * @var int.
          */
         private $numConexiones;
         /**
          * Fecha y hora de la última conexión en formato timestamp.
-         * @var type int
+         * @var int
          */
         private $fechaHoraUltimaConexion;
         /**
          * Tipo de perfil (Usuario normal, Usuario administrador).
-         * @var type String.
+         * @var String.
          */
         private $perfil;
         
         /**
          * __construct
          * Método mágico del constructor de la clase Usuario.
-         * @param type String $codUsuario código del usuario.
-         * @param type String $password contraseña del usuario.
-         * @param type String $descUsuario descripción del usuario.
-         * @param type String $numConexiones número de conexiones del usuario.
-         * @param type String $fechaHoraUltimaConexion fecha y hora de la última conexión del usuario.
-         * @param type String $perfil
+         * @param String $codUsuario código del usuario.
+         * @param String $password contraseña del usuario.
+         * @param String $descUsuario descripción del usuario.
+         * @param String $numConexiones número de conexiones del usuario.
+         * @param String $fechaHoraUltimaConexion fecha y hora de la última conexión del usuario.
+         * @param String $perfil
          */
         
         function __construct($codUsuario, $password, $descUsuario, $numConexiones, $fechaHoraUltimaConexion, $perfil){
@@ -61,7 +61,7 @@
         // Creamos los métodos get que devuelven el valor de cada atributo.
         /**
          * getCodUsuario()
-         * @return type String. 
+         * @return String. 
          * Devuelve el código del usuario.
          */
         function getCodUsuario(){
@@ -69,7 +69,7 @@
         }
         /**
          * getPassword()
-         * @return type String.
+         * @return String.
          * Devuelve la contraseña del usuario.
          */
         function getPassword(){
@@ -77,7 +77,7 @@
         }
         /**
          * getDescUsuario()
-         * @return type String.
+         * @return String.
          * Devuelve las descripción del usuario.
          */
         function getDescUsuario(){
@@ -85,7 +85,7 @@
         }
         /**
          * getNumConexiones()
-         * @return type int.
+         * @return int.
          * Devuelve el número de conexiones del usuario.
          */
         function getNumConexiones(){
@@ -93,7 +93,7 @@
         }
         /**
          * getFechaHoraUltimaConexion()
-         * @return type int.
+         * @return int.
          * Devuelve la fecha y la hora de la última conexión.
          */
         function getFechaHoraUltimaConexion(){
@@ -101,7 +101,7 @@
         }
         /**
          * getPerfil()
-         * @return type String.
+         * @return String.
          * Devuelve el tipo de perfil del usuario.
          */
         function getPerfil(){
@@ -111,7 +111,7 @@
         /**
          * setCodUsuario()
          * Método que modifica el valor de $codUsuario.
-         * @param type String $codUsuario nuevo código de usuario.
+         * @param String $codUsuario nuevo código de usuario.
          */
         function setCodUsuario($codUsuario){
            $this->codUsuario=$codUsuario; 
@@ -119,7 +119,7 @@
         /**
          * setPassword()
          * Método que modifica el valor de $password.
-         * @param type String $password nueva contraseña.
+         * @param String $password nueva contraseña.
          */
         function setPassword($password){
             $this->password=$password;
@@ -127,7 +127,7 @@
         /**
          * setDescUsuario()
          * Método que modifica el valor de $descUsuario.
-         * @param type String $descUsuario nueva descripción de usuario.
+         * @param String $descUsuario nueva descripción de usuario.
          */
         function setDescUsuario($descUsuario){
             $this->descUsuario=$descUsuario;
@@ -135,7 +135,7 @@
         /**
          * setNumConexiones()
          * Método que modifica el valor de $numConexiones.
-         * @param type int $numConexiones nuevo número de conexiones del usuario.
+         * @param int $numConexiones nuevo número de conexiones del usuario.
          */
         function setNumConexiones($numConexiones){
             $this->numConexiones=$numConexiones;
@@ -143,7 +143,7 @@
         /**
          * setFechaHoraUltimaConexion()
          * Método que modifica el valor de $fechaHoraUltimaConexion.
-         * @param type int $fechaHoraUltimaConexion nueva fecha y hora del usuario.
+         * @param int $fechaHoraUltimaConexion nueva fecha y hora del usuario.
          */
         function setFechaHoraUltimaConexion($fechaHoraUltimaConexion){
             $this->fechaHoraUltimaConexion=$fechaHoraUltimaConexion;
@@ -151,7 +151,7 @@
         /**
          * setPerfil()
          * Método que modifica el valor de $perfil.
-         * @param type String $perfil nuevo perfil del usuario.
+         * @param String $perfil nuevo perfil del usuario.
          */
         function setPerfil($perfil){
             $this->perfil=$perfil;

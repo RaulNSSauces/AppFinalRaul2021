@@ -81,15 +81,15 @@ Search.appendIndex(
             "summary": "Funcion\u0020validarTelefono",
             "url": "classes/validacionFormularios.html#method_validarTelefono"
         },                {
-            "fqsen": "\\DB",
-            "name": "DB",
+            "fqsen": "\\DBPDO",
+            "name": "DBPDO",
             "summary": "Class\u0020DB.",
-            "url": "classes/DB.html"
+            "url": "classes/DBPDO.html"
         },                {
-            "fqsen": "\\DB\u003A\u003AejecutarConsulta\u0028\u0029",
+            "fqsen": "\\DBPDO\u003A\u003AejecutarConsulta\u0028\u0029",
             "name": "ejecutarConsulta",
             "summary": "ejecutarConsulta\u0028\u0029\nM\u00E9todo\u0020que\u0020ejecuta\u0020una\u0020consulta\u0020SQL\u0020contra\u0020la\u0020base\u0020de\u0020datos.",
-            "url": "classes/DB.html#method_ejecutarConsulta"
+            "url": "classes/DBPDO.html#method_ejecutarConsulta"
         },                {
             "fqsen": "\\Usuario",
             "name": "Usuario",
@@ -223,7 +223,7 @@ Search.appendIndex(
         },                {
             "fqsen": "\\UsuarioPDO\u003A\u003AmodificarPassword\u0028\u0029",
             "name": "modificarPassword",
-            "summary": "",
+            "summary": "modificarPassword\u0028\u0029\nM\u00E9todo\u0020que\u0020modifica\u0020la\u0020contrase\u00F1a\u0020del\u0020usuario\u0020en\u0020la\u0020base\u0020de\u0020datos.",
             "url": "classes/UsuarioPDO.html#method_modificarPassword"
         },                {
             "fqsen": "\\Rest",
@@ -240,6 +240,111 @@ Search.appendIndex(
             "name": "sevicioAPOD",
             "summary": "servicioAPOD\u0028\u0029\nM\u00E9todo\u0020que\u0020muestra\u0020una\u0020foto\u0020y\u0020una\u0020descripci\u00F3n\u0020de\u0020la\u0020Nasa\u0020seg\u00FAn\u0020el\u0020d\u00EDa.",
             "url": "classes/Rest.html#method_sevicioAPOD"
+        },                {
+            "fqsen": "\\Rest\u003A\u003Acalculadora\u0028\u0029",
+            "name": "calculadora",
+            "summary": "calculadora\u0028\u0029\nM\u00E9todo\u0020que\u0020realiza\u0020operaciones\u0020matem\u00E1ticas.",
+            "url": "classes/Rest.html#method_calculadora"
+        },                {
+            "fqsen": "\\Departamento",
+            "name": "Departamento",
+            "summary": "Class\u0020Departamento\nClase\u0020que\u0020se\u0020va\u0020a\u0020utilizar\u0020para\u0020crear\u0020un\u0020objeto\u0020de\u0020la\u0020clase\u0020departamento.",
+            "url": "classes/Departamento.html"
+        },                {
+            "fqsen": "\\Departamento\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "__construct\nM\u00E9todo\u0020m\u00E1gico\u0020del\u0020constructor\u0020de\u0020la\u0020clase\u0020Departamento.",
+            "url": "classes/Departamento.html#method___construct"
+        },                {
+            "fqsen": "\\Departamento\u003A\u003AgetCodDepartamento\u0028\u0029",
+            "name": "getCodDepartamento",
+            "summary": "getCodDepartamento\u0028\u0029",
+            "url": "classes/Departamento.html#method_getCodDepartamento"
+        },                {
+            "fqsen": "\\Departamento\u003A\u003AgetDescDepartamento\u0028\u0029",
+            "name": "getDescDepartamento",
+            "summary": "getDescDepartamento\u0028\u0029",
+            "url": "classes/Departamento.html#method_getDescDepartamento"
+        },                {
+            "fqsen": "\\Departamento\u003A\u003AgetVolumenDeNegocio\u0028\u0029",
+            "name": "getVolumenDeNegocio",
+            "summary": "getVolumenDeNegocio\u0028\u0029",
+            "url": "classes/Departamento.html#method_getVolumenDeNegocio"
+        },                {
+            "fqsen": "\\Departamento\u003A\u003AgetFechaBajaDepartamento\u0028\u0029",
+            "name": "getFechaBajaDepartamento",
+            "summary": "getFechaBajaDepartamento\u0028\u0029",
+            "url": "classes/Departamento.html#method_getFechaBajaDepartamento"
+        },                {
+            "fqsen": "\\Departamento\u003A\u003AsetCodDepartamento\u0028\u0029",
+            "name": "setCodDepartamento",
+            "summary": "setCodDepartamento\u0028\u0029\nM\u00E9todo\u0020que\u0020modifica\u0020el\u0020valor\u0020de\u0020\u0024codDepartamento",
+            "url": "classes/Departamento.html#method_setCodDepartamento"
+        },                {
+            "fqsen": "\\Departamento\u003A\u003AsetDescDepartamento\u0028\u0029",
+            "name": "setDescDepartamento",
+            "summary": "setDescDepartamento\u0028\u0029\nM\u00E9todo\u0020que\u0020modifica\u0020el\u0020valor\u0020de\u0020\u0024descDepartamento.",
+            "url": "classes/Departamento.html#method_setDescDepartamento"
+        },                {
+            "fqsen": "\\Departamento\u003A\u003AsetVolumenDeNegocio\u0028\u0029",
+            "name": "setVolumenDeNegocio",
+            "summary": "setVolumenDeNegocio\u0028\u0029\nM\u00E9todo\u0020que\u0020modifica\u0020el\u0020valor\u0020de\u0020\u0024volumenDeNegocio.",
+            "url": "classes/Departamento.html#method_setVolumenDeNegocio"
+        },                {
+            "fqsen": "\\Departamento\u003A\u003AsetFechaBajaDepartamento\u0028\u0029",
+            "name": "setFechaBajaDepartamento",
+            "summary": "setFechaBajaDepartamento\u0028\u0029\nM\u00E9todo\u0020que\u0020modifica\u0020el\u0020valor\u0020de\u0020\u0024fechaBajaDepartamento.",
+            "url": "classes/Departamento.html#method_setFechaBajaDepartamento"
+        },                {
+            "fqsen": "\\Departamento\u003A\u003A\u0024codDepartamento",
+            "name": "codDepartamento",
+            "summary": "C\u00F3digo\u0020del\u0020departamento",
+            "url": "classes/Departamento.html#property_codDepartamento"
+        },                {
+            "fqsen": "\\Departamento\u003A\u003A\u0024descDepartamento",
+            "name": "descDepartamento",
+            "summary": "Descripci\u00F3n\u0020del\u0020departamento.",
+            "url": "classes/Departamento.html#property_descDepartamento"
+        },                {
+            "fqsen": "\\Departamento\u003A\u003A\u0024volumenDeNegocio",
+            "name": "volumenDeNegocio",
+            "summary": "Volumen\u0020de\u0020negocio\u0020del\u0020departamento.",
+            "url": "classes/Departamento.html#property_volumenDeNegocio"
+        },                {
+            "fqsen": "\\Departamento\u003A\u003A\u0024fechaBajaDepartamento",
+            "name": "fechaBajaDepartamento",
+            "summary": "Fecha\u0020de\u0020baja\u0020de\u0020un\u0020departamento.",
+            "url": "classes/Departamento.html#property_fechaBajaDepartamento"
+        },                {
+            "fqsen": "\\DepartamentoPDO",
+            "name": "DepartamentoPDO",
+            "summary": "Class\u0020DepartamentoPDO\nClase\u0020compuesta\u0020de\u0020m\u00E9todos\u0020que\u0020hacen\u0020consultas\u0020a\u0020la\u0020base\u0020de\u0020datos\u0020de\u0020la\u0020tabla\u0020T02_Departamento.",
+            "url": "classes/DepartamentoPDO.html"
+        },                {
+            "fqsen": "\\DepartamentoPDO\u003A\u003AbuscaDepartamentosPorDescripcion\u0028\u0029",
+            "name": "buscaDepartamentosPorDescripcion",
+            "summary": "buscaDepartamentoPorDescripcion\u0028\u0029\nM\u00E9todo\u0020que\u0020busca\u0020departamentos\u0020por\u0020la\u0020descripci\u00F3n\u0020del\u0020departamento\u0020accediendo\u0020a\u0020la\u0020base\u0020de\u0020datos.",
+            "url": "classes/DepartamentoPDO.html#method_buscaDepartamentosPorDescripcion"
+        },                {
+            "fqsen": "\\DepartamentoPDO\u003A\u003AbuscaDepartamentosPorCodigo\u0028\u0029",
+            "name": "buscaDepartamentosPorCodigo",
+            "summary": "buscaDepartamentoPorCodigo\u0028\u0029\nM\u00E9todo\u0020que\u0020busca\u0020departamentos\u0020por\u0020el\u0020c\u00F3digo\u0020del\u0020departamento\u0020accediendo\u0020a\u0020la\u0020base\u0020de\u0020datos.",
+            "url": "classes/DepartamentoPDO.html#method_buscaDepartamentosPorCodigo"
+        },                {
+            "fqsen": "\\DepartamentoPDO\u003A\u003AaltaDepartamento\u0028\u0029",
+            "name": "altaDepartamento",
+            "summary": "altaDepartamento\u0028\u0029\nM\u00E9todo\u0020que\u0020da\u0020de\u0020alta\u0020un\u0020departamento\u0020insertando\u0020datos\u0020en\u0020la\u0020base\u0020de\u0020datos.",
+            "url": "classes/DepartamentoPDO.html#method_altaDepartamento"
+        },                {
+            "fqsen": "\\DepartamentoPDO\u003A\u003AbajaFisicaDepartamento\u0028\u0029",
+            "name": "bajaFisicaDepartamento",
+            "summary": "bajaFisicaDepartamento\u0028\u0029\nM\u00E9todo\u0020que\u0020elimina\u0020un\u0020departamento\u0020de\u0020la\u0020base\u0020de\u0020datos.",
+            "url": "classes/DepartamentoPDO.html#method_bajaFisicaDepartamento"
+        },                {
+            "fqsen": "\\DepartamentoPDO\u003A\u003AmodificaDepartamento\u0028\u0029",
+            "name": "modificaDepartamento",
+            "summary": "modificaDepartamento\u0028\u0029\nM\u00E9todo\u0020que\u0020modifica\u0020el\u0020c\u00F3digo,\u0020la\u0020descripci\u00F3n\u0020y\u0020el\u0020volumen\u0020de\u0020negocio\u0020de\u0020un\u0020departamento\u0020en\u0020la\u0020base\u0020de\u0020datos.",
+            "url": "classes/DepartamentoPDO.html#method_modificaDepartamento"
         },                {
             "fqsen": "\\",
             "name": "\\",

@@ -11,8 +11,8 @@ class Rest{
     /**
      * instalacionesDeportivas().
      * Método que muestra las instalaciones deportivas que existen en diferentes municipios de Madrid.
-     * @param type String $distrito nombre del municipio.
-     * @return type Array $aPolideportivos Devuelve un array con los distintos polideportivos de la comunidad de Madrid.
+     * @param String $distrito nombre del municipio.
+     * @return Array $aPolideportivos Devuelve un array con los distintos polideportivos de la comunidad de Madrid.
      */
     public static function instalacionesDeportivas($distrito) {
         
@@ -33,8 +33,8 @@ class Rest{
     /**
      * servicioAPOD()
      * Método que muestra una foto y una descripción de la Nasa según el día.
-     * @param type Date $fecha fecha que le paso como parámetro
-     * @return type String Devuelve un String codificado a Json.
+     * @param Date $fecha fecha que le paso como parámetro
+     * @return String Devuelve un String codificado a Json.
      */
     public static function sevicioAPOD($fecha) {
         return json_decode(file_get_contents("https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=$fecha"), true);        
@@ -42,10 +42,10 @@ class Rest{
     /**
      * calculadora()
      * Método que realiza operaciones matemáticas.
-     * @param type int $tipo Tipo de operación, suma, resta, multiplicación o división.
-     * @param type float $n1 Primer número que le paso como parámetro.
-     * @param type float $n2 Segundo número que le paso como parámetro.
-     * @return type float Devuelve un float codificado a Json.
+     * @param int $tipo Tipo de operación, suma, resta, multiplicación o división.
+     * @param float $n1 Primer número que le paso como parámetro.
+     * @param float $n2 Segundo número que le paso como parámetro.
+     * @return float Devuelve un float codificado a Json.
      */
     public static function calculadora($tipo, $n1, $n2){
         return json_decode(file_get_contents("http://daw203.ieslossauces.es/AppFinalRaul2021/api/calculadora.php?operaciones=$tipo&n1=$n1&n2=$n2"), true);

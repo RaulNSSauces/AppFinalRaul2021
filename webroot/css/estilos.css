@@ -28,14 +28,15 @@ HEADER
 FORMULARIOS
 */
 .loginbox{
-    width: 650px; height: 650px;
+    width: 650px; height: auto;
     background: white;
     color: #1769d1;
     margin: auto;
     box-sizing: border-box;
-    padding: 130px 80px;
+    padding: 80px 80px;
     border-radius: 30px;
     border: 1px solid #c0c0c0;
+    min-height: 600px;
 }
 .loginbox input{
     width: 100%;
@@ -131,9 +132,19 @@ V REGISTRO
     color:black;
     font-size: 18px;
     border-radius: 50px;
-    margin-top: 5px;
-    padding-left: 90px;
-    padding-right: 90px;
+    width: 70%;
+    margin: auto;
+}
+.btnAtrasRest{
+    border:none;
+    outline: none;
+    height: 40px;
+    background: #e0e0e0;
+    color:black;
+    font-size: 18px;
+    border-radius: 50px;
+    width: 20%;
+    margin: auto;
 }
 .btnAceptar{
     border:none;
@@ -143,17 +154,38 @@ V REGISTRO
     color:white;
     font-size: 18px;
     border-radius: 50px;
-    margin-top: 5px;
-    margin-left: 13px;
-    padding-left: 90px;
-    padding-right: 90px;
+    margin: auto;
+    width: 70%;
+}
+.btnAceptarRest{
+    border:none;
+    outline: none;
+    height: 40px;
+    background: #1769d1;
+    color:white;
+    font-size: 18px;
+    border-radius: 50px;
+    margin: auto;
+    width: 20%;
+}
+.contenedorAceptar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedorAtras{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3%;
+    width: 100%;
 }
 /*
 V INICIO
 */
 .vInicio{
     text-align: center;
-    padding-top: 200px;
+    padding-top: 100px;
     font-size: 20px;
     color: #7d7d7d;
 }
@@ -199,6 +231,13 @@ V INICIO
     top: -8%;
     left: 45%;
 }
+.btnAjax{
+    border:none;
+    background-color:white;
+    position: absolute;
+    top: -8%;
+    left: 40%;
+}
 /*
 MANTENIMIENTO DE DEPARTAMENTOS
 */
@@ -206,7 +245,7 @@ MANTENIMIENTO DE DEPARTAMENTOS
     position: absolute;
     left: 15%;
     top:15%;
-    width: 1400px;
+    width: 1300px;
 }
 .thMto{
     background-color:#aab7b8;
@@ -238,6 +277,19 @@ MANTENIMIENTO DE DEPARTAMENTOS
     left: 220%;
     top:-20%;
 }
+.btnMtoAñadirDepartamento{
+    border:none;
+    outline: none;
+    height: 50px;
+    background: #1769d1;
+    color:white;
+    font-size: 18px;
+    border-radius: 40px;
+    position: absolute;
+    width: 90%;
+    left: 405%;
+    top:-50%;
+}
 .btnacb{
     border:none;
     background-color: transparent;
@@ -268,7 +320,7 @@ MANTENIMIENTO DE DEPARTAMENTOS
     padding-right: 40px;
     position: absolute;
     bottom: 60px;
-    left: 20%;
+    left: 15%;
 }
 .btnMtoExportar{
     border:none;
@@ -302,7 +354,7 @@ footer p{
     left: 50px;
     padding-right: 10px;
     padding-left: 10px;
-    border-right: 1px solid  #c6c6c6 ;
+    
     height: min-content;
 }
 .iconos7{
@@ -315,4 +367,38 @@ footer p{
 footer table tr td a{
     text-decoration: none;
     color: #b4b4b4;
+    width: auto;
+}
+/*
+API POKEMON
+*/
+.logo{
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    width: 250px;
+    height: 100px;
+}
+.contenedor{
+    text-align: center;
+    margin: 0 auto;
+    height: 300px;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+.contenedor input{
+    text-align: center;
+}
+.contenedor button{
+    margin-top: 20px;
+    margin-bottom: -30px;
+}
+.pokemon{
+    width: 150px;
+    height: 150px;
+    margin: 40px auto;
+    display: inline-block;
 }

@@ -7,7 +7,7 @@
     require_once 'model/Rest.php';
     require_once 'model/Departamento.php';
     require_once 'model/DepartamentoPDO.php';;
-    //Creo un array en el que almaceno todos los controladores.
+    //Creo un array en el que almaceno la ruta de todos los controladores.
     $controlador=["login" => "controller/cLogin.php",
                   "inicio" => "controller/cInicio.php",
                   "registro" => "controller/cRegistro.php",
@@ -22,8 +22,9 @@
                   "bajaLogicaDepartamento" => "controller/cBajaLogicaDepartamento.php",
                   "rehabilitacionDepartamento" => "controller/cRehabilitacionDepartamento.php",
                   "exportarDepartamentos" => "controller/cExportarDepartamentos.php",
-                  "importarDepartamentos" => "controller/cImportarDepartamentos.php"];
-    //Creo un array en el que almaceno todas las vistas.
+                  "importarDepartamentos" => "controller/cImportarDepartamentos.php",
+                  "ajax" => "controller/cAjax.php"];
+    //Creo un array en el que almaceno la ruta de todas las vistas.
     $vistas=["login" => "view/vLogin.php",
              "inicio" => "view/vInicio.php",
              "layout" => "view/Layout.php",
@@ -39,5 +40,6 @@
              "bajaLogicaDepartamento" => "view/vBajaLogicaDepartamento.php",
              "rehabilitacionDepartamento" => "view/vRehabilitacionDepartamento.php",
              "exportarDepartamentos" => "view/vExportarDepartamentos.php",
-             "importarDepartamentos" => "view/vImportarDepartamentos.php"];
+             "importarDepartamentos" => "view/vImportarDepartamentos.php",
+             "ajax" => "view/vAjax.php"];
 ?>

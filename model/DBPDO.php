@@ -7,13 +7,13 @@
  * @copyright (c) 21-01-2021.
  * @version 1.0.
  */
-    class DB{ //Creo una clase que se llama DB(DATA BASE).
+    class DBPDO{ //Creo una clase que se llama DB(DATA BASE).
         /**
          * ejecutarConsulta()
          * Método que ejecuta una consulta SQL contra la base de datos.
-         * @param type String $SQL Consulta SQL que se va a ejecutar.
-         * @param type Array $parametros Parámetros que necesita la consulta para ser ejecutada.
-         * @return type PDOStatement devuelve el resultado de la consulta.
+         * @param String $SQL Consulta SQL que se va a ejecutar.
+         * @param Array[] $parametros Parámetros que necesita la consulta para ser ejecutada.
+         * @return PDOStatement devuelve el resultado de la consulta.
          */
         public static function ejecutarConsulta($SQL, $parametros){
             try{

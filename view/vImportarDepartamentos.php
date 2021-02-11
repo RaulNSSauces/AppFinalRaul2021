@@ -14,9 +14,12 @@
                 <input type="file" name="importarDep">
             </div>
         <br>
-            <div>
-                <button class="btnAtras" type="submit" name="cancelar">Atrás</button>
+            <div class="contenedorAceptar">
+                <button class="btnAceptar" type="submit" name="importar">Aceptar</button>
             </div>
+    </form>
+    <form class="contenedorAtras">
+        <button class="btnAtras" type="submit" name="cancelar">Atrás</button>
     </form>
     </div>
 </main>

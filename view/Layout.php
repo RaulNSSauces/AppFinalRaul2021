@@ -4,16 +4,17 @@
         <meta charset="UTF-8">
         <meta name="author" content="Raúl Núñez Sebastián">
         <link rel="stylesheet" href="webroot/css/estilos.css">
+        <script type="text/javascript" src="webroot/js/scripts.js"></script>
     </head>
     <body>
         <?php
             require_once $vista;
         ?>
-        <footer>
+        <footer style="background: #eeeeee;">
             <table>
                 <tr>
-                    <td><p>App Final</p>Raúl Núñez Sebastián &copy; 2020/2021</td>
-                    <td class="iconos"><a href="#"><img style="width: 25px; height: 25px;" src="webroot/media/rss.png"></a></td>
+                    <td><p style="margin: 0;">App Final</p>Raúl Núñez Sebastián &copy; 2020/2021</td>
+                    <td class="iconos"><a href="docs/rss.xml" target="blank"><img style="width: 25px; height: 25px;" src="webroot/media/rss.png"></a></td>
                     <td class="iconos"><a href="https://github.com/RaulNSSauces/AppFinalRaul2021" target="blank"><img style="width: 25px; height: 25px;" src="webroot/media/git.png"></a></td>
                     <td class="iconos"><a href="doc/index.html" target="blank"><img style="width: 25px; height: 25px;" src="webroot/media/phpdoc.png"></a></td>
                     <td class="iconos"><a href="http://daw203.ieslossauces.es/" target="blank">Ir a la web del autor</a></td>

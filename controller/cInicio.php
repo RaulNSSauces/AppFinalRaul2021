@@ -39,6 +39,11 @@
         header("Location: index.php");//Recargo el index.
         exit;
     }
+    if(isset($_REQUEST["ajax"])){//Si el usuario le da al botón de ajax.
+        $_SESSION["paginaEnCurso"]=$controlador["ajax"];//Guardo en la variable de sesión la ruta del controlador del ajax.
+        header("Location: index.php");//Recargo el index.
+        exit;
+    }
     //Saco todos los campos necesarios de la base de datos almacenándolos en variables.
     $numConexiones = $_SESSION['usuarioDAW203LoginLogoffMulticapa']->getNumConexiones();
     $descUsuario = $_SESSION['usuarioDAW203LoginLogoffMulticapa']->getDescUsuario();

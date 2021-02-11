@@ -1,6 +1,6 @@
 <div class="cabeza">
     <header>
-        <h1>Aplicación Final</h1>
+        <h1>Aplicación Raúl 2021</h1>
     </header>
 </div>
 <main>
@@ -46,6 +46,9 @@
         <br>
         <br>
             <a href="docs/201127ModeloFisicoDeDatos2021.pdf" target="blank">Ver modelo físico de datos</a>
+        <br>
+        <br>
+            <a href="docs/diagramaDeClasesRaul.png" target="blank">Ver diagrama de clases (Actualizado semana a semana)</a>
         </article>
     </div>
 </main>

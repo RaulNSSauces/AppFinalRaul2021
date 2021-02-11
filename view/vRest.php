@@ -69,8 +69,12 @@
                 ?>
                 <br>
                 <br>
-            <button class="btnAtras" type="submit" name="calcula">Calcula</button>
-            <button class="btnAtras" type="submit" name="cancelar">Volver</button>
+                <div class="contenedorAceptar">
+                    <button class="btnAceptarRest" type="submit" name="calcula">Calcula</button>
+                </div>
+                <div class="contenedorAtras">
+                    <button class="btnAtrasRest" type="submit" name="cancelar">Volver</button>
+                </div>
             </form>
             <br>
             <br>
@@ -93,10 +97,13 @@
                     }
                 ?>
             <br>
-            <button class="btnAtras" type="submit" name="buscar">Buscar</button>
-            <button class="btnAtras" type="submit" name="cancelar">Volver</button>
+            <div class="contenedorAceptar">
+                <button class="btnAceptarRest" type="submit" name="buscar">Buscar</button>
+            </div>
+            <div class="contenedorAtras">
+                <button class="btnAtrasRest" type="submit" name="cancelar">Volver</button>
+            </div>
             </form>
-            <br>
             <br>
         </div>
     </article>
@@ -110,15 +117,18 @@
                     <div>
                         <p><?php echo $tituloEnCurso?></p>
         <br>
-        
                         <img src="<?php echo $imagenEnCurso?>" width="200px">
         <br>
                         <p><?php echo $descripcionEnCurso?></p>
                     </div>
         <br>
         <br>
-                <button class="btnAtras" type="submit" name="enviar">Buscar</button>
-                <button class="btnAtras" type="submit" name="cancelar">Volver</button>
+            <div class="contenedorAceptar">
+                <button class="btnAceptarRest" type="submit" name="enviar">Buscar</button>
+            </div>
+            <div class="contenedorAtras">
+                <button class="btnAtrasRest" type="submit" name="cancelar">Volver</button>
+            </div> 
             </form>
         </div>
     </article>

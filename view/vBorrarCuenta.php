@@ -22,10 +22,12 @@
                 <input type="text" name="fechaHoraUltimaConexion" value="<?php echo date("d-m-Y H:i:s",$fechaHoraUltimaConexion)?>" readonly>
             </div>
         <br>
-            <div>
-                <button class="btnAtras" type="submit" name="cancelar">Atrás</button>
+            <div class="contenedorAceptar">
                 <button class="btnAceptar" type="submit" name="borrar">Borrar</button>
             </div>
+    </form>
+    <form class="contenedorAtras">
+        <button class="btnAtras" type="submit" name="cancelar">Atrás</button>
     </form>
     </div>
 </main>

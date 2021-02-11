@@ -1,5 +1,5 @@
 <?php
-if(isset ($_REQUEST["volver"])){//Si el usuario pulsa el botón de volver.
+if(isset($_REQUEST["volver"])){//Si el usuario pulsa el botón de volver.
     $_SESSION["paginaEnCurso"]=$controlador["inicio"];//Guardo en la variable de sesión la ruta del controlador del inicio.
     header("Location: index.php");//Recargo el index.
     exit;
@@ -34,6 +34,49 @@ if(isset ($_REQUEST["importar"])){//Si el usuario pulsa el botón de importar.
     header("Location: index.php");//Recargo el index.
     exit;
 }
+
+if(!isset($_REQUEST["buscar"])){
+    $aDepartamento = DepartamentoPDO::buscaDepartamentosPorDescripcion("");
+}
+
+define("OPCIONAL", 0);
+
+if(isset($_REQUEST["buscar"])){
+    $entradaOk = true;
+    $errorBusqueda = null;
+    
+    $errorBusqueda = validacionFormularios::comprobarAlfaNumerico($_REQUEST["descDepartamento"], 255, 1, OPCIONAL);
+    if($errorBusqueda != null){
+        $entradaOk = false;
+        $_REQUEST["descDepartamento"] = "";
+    }
+}else{
+    $_REQUEST["descDepartamento"] = "";
+}
+
+if($entradaOk){
+    $_SESSION["BuscarDepartamento"] = $_REQUEST["descDepartamento"];
+    $aDepartamento = DepartamentoPDO::buscaDepartamentosPorDescripcion($_REQUEST["descDepartamento"]);
+}
+/*
+if(isset($_REQUEST["buscarPorCodigo"])){
+    $entradaOk = true;
+    $errorBusqueda = null;
+    
+    $errorBusqueda = validacionFormularios::comprobarAlfaNumerico($_REQUEST["codDepartamento"], 8, 1, OPCIONAL);
+    if($errorBusqueda != null){
+        $entradaOk = false;
+        $_REQUEST["codDepartamento"] = "";
+    }
+}else{
+    $_REQUEST["codDepartamento"] = "";
+}
+
+if($entradaOk){
+    $_SESSION["BuscarDepartamento"] = $_REQUEST["codDepartamento"];
+    $aDepartamento = DepartamentoPDO::buscaDepartamentosPorCodigo($_REQUEST["codDepartamento"]);
+}
+*/
 $vista = $vistas["mtoDepartamentos"]; //Almaceno en una variable la vista que quiero cargar.
 require_once $vistas['layout']; //Incluyo la vista del layout.
 ?>

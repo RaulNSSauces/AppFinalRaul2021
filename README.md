@@ -37,6 +37,11 @@ Back End
     PHP 7.4
     MySQL 8.0
 
+Módulos activos de PHP
+
+    php7.4.conf
+    php7.4.load
+
 1&1
 
     http://daw203.ieslossauces.es/AppFinalRaul2021/index.php

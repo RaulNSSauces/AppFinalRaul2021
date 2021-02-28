@@ -6,12 +6,11 @@
 <main>
     <div class="loginbox">
         <p class="pEditarPerfil">Importa tus departamentos</p>
-    <form name="modificarPerfil" action="<?php echo $_SERVER['PHP_SELF'];?>" method="post">
+    <form name="modificarPerfil" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" enctype="multipart/form-data">
             <div>
                 <label for="importarDep">Examina para importar tus departamentos</label>
                 <br>
-                <br>
-                <input type="file" name="importarDep">
+                <input type="file" id="importarDep" name="importarDep">
             </div>
         <br>
             <div class="contenedorAceptar">

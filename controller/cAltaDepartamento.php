@@ -18,6 +18,9 @@ $aErrores = ["codDepartamento" => null,
 if(isset($_REQUEST["cambiar"])){
     
     $aErrores["codDepartamento"] = validacionFormularios::comprobarAlfaNumerico($_REQUEST ["codDepartamento"],3,3, OBLIGATORIO); //Compruebo que el campo CodDepartamento que introduce el usuario es válido.
+    if($aErrores["codDepartamento"]==null && DepartamentoPDO::validarCodNoExiste($_REQUEST["codDepartamento"])==false){//Si el array de errores del campo del código está vacío y el método validadCodNoExiste() devuelve falso.
+            $aErrores["codDepartamento"]="El código de usuario ya existe";//Muestro un mensaje de que el código del usuario ya existe.
+        }
     $aErrores["descDepartamento"] = validacionFormularios::comprobarAlfaNumerico($_REQUEST ["descDepartamento"],255,1, OBLIGATORIO); //Compruebo que el campo DescDepartamento que introduce el usuario es válido.
     $aErrores["volumenNegocio"] = validacionFormularios::comprobarFloat($_REQUEST["volumenNegocio"], MAX_FLOAT, MIN_FLOAT, OBLIGATORIO); //Compruebo que el campo VolumenNegocio que introduce el usuario es válido.
 

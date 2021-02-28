@@ -96,24 +96,23 @@ V LOGIN
     padding-right: 90px;
 }
 .ver1{
-    position: absolute;
-    left:10%;
-    bottom: 45%;
-    color:#7d7d7d;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
 }
-.ver1 a{
-    color:#7d7d7d;
-    text-decoration: none;
+.ver1 img{
+    border-radius: 20%;
+    height:150px; 
+    width:150px;
+    border:2px double #D0C000;
 }
-.ver2{
-    position: absolute;
-    left: 77%;
-    bottom: 48%;
-    color:#7d7d7d;
-}
-.ver2 a{
-    color:#7d7d7d;
-    text-decoration: none;
+.ver1 img:hover{
+    -webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
 }
 /*
 V REGISTRO

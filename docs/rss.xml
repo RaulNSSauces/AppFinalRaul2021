@@ -1,38 +1,31 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
     <channel>
         <title>AppFinalRaul2021</title>
+		<copyright> 2020-2021 Raúl Núñez Sebastián Todos los Derechos Reservados</copyright>
         <link>http://daw203.ieslossauces.es/AppFinalRaul2021</link>
         <description>Aplicación AppFinalRaul2021 del modulo DWES</description>
-        <language>es-es</language>
-        <author>Raúl Núñez Sebastián</author>
+        <language>es-ES</language>
         <lastBuildDate>Mon, 08 Feb 2021 10:33:00 +0100</lastBuildDate>
-        
         <item>
             <title>Introducción AppFinalRaul2021</title>
             <link>http://daw203.ieslossauces.es/AppFinalRaul2021/index.php</link>
-            <guid isPermalink="true">http://daw203.ieslossauces.es/AppFinalRaul2021/index.php</guid>
-            <description>La aplicación permite inicio de sesión, registro, mantenimiento de departamentos y uso de API REST. </description>
-            <author>Raúl Núñez Sebastián</author>
-            <pubDate>Mon, 08 Feb 2021 10:33:00 +0100</pubDate>
+			<description>La aplicación permite inicio de sesión, registro, mantenimiento de departamentos y uso de API REST. </description>
+            <guid>http://daw203.ieslossauces.es/AppFinalRaul2021/mtoDepartamentos</guid>
+            <pubDate>Fri, 12 Feb 2021 18:00:00 GMT</pubDate>
         </item>
-        
         <item>
             <title>Navegación de la web</title>
             <link>http://daw203.ieslossauces.es/AppFinalRaul2021/index.php</link>
-            <guid isPermalink="true">http://daw203.ieslossauces.es/AppFinalRaul2021/index.php</guid>
-            <description>Se ha añadido en la página de login diferentes enlaces donde podemos ver los ficheros que indican las características de la aplicación.</description>
-            <author>Raúl Núñez Sebastián</author>
-            <pubDate>Mon, 08 Feb 2021 10:33:00 +0100</pubDate>
+			 <description>Se ha añadido en la página de login diferentes enlaces donde podemos ver los ficheros que indican las características de la aplicación.</description>
+            <guid>http://daw203.ieslossauces.es/AppFinalRaul2021/login</guid>
+            <pubDate>Fri, 05 Feb 2021 10:33:00 GMT</pubDate>
         </item>
-        
         <item>
             <title>API REST</title>
             <link>http://daw203.ieslossauces.es/AppFinalRaul2021/index.php</link>
-            <guid isPermalink="true">http://daw203.ieslossauces.es/AppFinalRaul2021/index.php</guid>
-            <description>En la ventana del inicio se ha añadido un botón de REST y otro de MtoDepartamentos. Podemos ver hacer uso de diferentes APIs. En el botón de MtoDepartamentos podemos gestionar los departamentos que tenemos en la base de datos. </description>
-            <author>Raúl Núñez Sebastián</author>
-            <pubDate>Mon, 08 Feb 2021 10:33:00 +0100</pubDate>
+			<description>En la ventana del inicio se ha añadido un botón de REST y otro de MtoDepartamentos. Podemos ver hacer uso de diferentes APIs. En el botón de MtoDepartamentos podemos gestionar los departamentos que tenemos en la base de datos. </description>
+            <guid>http://daw203.ieslossauces.es/AppFinalRaul2021/inicio</guid>
+            <pubDate>Fri, 29 Jan 2021 18:00:00 GMT</pubDate>
         </item>
     </channel>
 </rss>

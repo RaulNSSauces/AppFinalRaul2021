@@ -5,9 +5,10 @@ if(isset ($_REQUEST["cancelar"])){//Si el usuario pulsa en el botón de cancelar
     exit;
 }
 
+$oDepartamento = DepartamentoPDO::datosDepartamentos($_SESSION["codDepartamento"]);
+
 if(isset ($_REQUEST["eliminar"])){
-    $oDepartamento = DepartamentoPDO::bajaFisicaDepartamento($_REQUEST["codDepartamento"]);
-    $_SESSION["departamentos"]=$oDepartamento;
+    DepartamentoPDO::bajaFisicaDepartamento($_SESSION["codDepartamento"]);
     $_SESSION["paginaEnCurso"]=$controlador["mtoDepartamentos"];
     header("Location: index.php");
     exit;

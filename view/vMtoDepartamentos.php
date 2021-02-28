@@ -18,10 +18,11 @@
             ?>
             <table class="tMto">
                 <tr class="trMto">
-                    <th class="thMto">Código</td>
-                    <th class="thMto">Descripción</td>
-                    <th class="thMto">Fecha</td>
-                    <th class="thMto">Volumen de Negocio</td>
+                    <th class="thMto">Código</th>
+                    <th class="thMto">Descripción</th>
+                    <th class="thMto">Fecha de creacion</th>
+                    <th class="thMto">Volumen de Negocio</th>
+                    <th class="thMto">Fecha de baja</th>
                 </tr>
                 <?php
                     foreach($aDepartamento as $numDepartamento => $oDepartamento){
@@ -29,14 +30,18 @@
                 <tr>
                     <td><?php echo $oDepartamento->getCodDepartamento();?></td>
                     <td><?php echo $oDepartamento->getDescDepartamento();?></td>
-                    <td><?php //echo date('d/m/Y',$oDepartamento->getFechaBajaDepartamento()); ?></td>
+                    <td><?php echo date('d/m/Y',$oDepartamento->getFechaCreacionDepartamento());?></td>
                     <td><?php echo $oDepartamento->getVolumenDeNegocio();?></td>
+                    <td><?php if($oDepartamento->getFechaBajaDepartamento() == null){
+                                echo "null";
+                              }else{
+                                echo date('d/m/Y',$oDepartamento->getFechaBajaDepartamento());}?></td>
                     <td>
                         <form name="mtoDep" method="post">
-                            <button class="btnacb" type="submit" name="consultar"><img src="webroot/media/consultarDep.png" width="30px" height="30px"></button>
-                            <button class="btnacb" type="submit" name="eliminar"><img src="webroot/media/eliminarDep.png" width="30px" height="30px"></button>
-                            <button class="btnacb" type="submit" name="alta"><img src="webroot/media/altaDep.png" width="30px" height="30px"></button>
-                            <button class="btnacb" type="submit" name="baja"><img src="webroot/media/bajaDep.png" width="30px" height="30px"></button>
+                            <button class="btnacb" type="submit" name="consultar" value="<?php echo $oDepartamento->getCodDepartamento();?>"><img src="webroot/media/consultarDep.png" width="30px" height="30px"></button>
+                            <button class="btnacb" type="submit" name="eliminar" value="<?php echo $oDepartamento->getCodDepartamento();?>"><img src="webroot/media/eliminarDep.png" width="30px" height="30px"></button>
+                            <button class="btnacb" type="submit" name="alta" value="<?php echo $oDepartamento->getCodDepartamento();?>"><img src="webroot/media/altaDep.png" width="30px" height="30px"></button>
+                            <button class="btnacb" type="submit" name="baja" value="<?php echo $oDepartamento->getCodDepartamento();?>"><img src="webroot/media/bajaDep.png" width="30px" height="30px"></button>
                         </form>
                     </td>
                 </tr>
@@ -44,15 +49,15 @@
                     }
                 ?>
             </table>
-            <form name="mtoDep" method="post">
-                <button class="btnMtoImportar" type="submit" name="importar">Importar</button>
-                <button class="btnMtoExportar" type="submit" name="exportar">Exportar</button>
-                <button class="btnMtoVolver" type="submit" name="volver">Volver</button>
-            </form>
             <?php
             }else{
                 echo "No se han encontrado departamentos con esa descripción";
             }
             ?>
+            <form name="mtoDep" method="post">
+                <button class="btnMtoImportar" type="submit" name="importar">Importar</button>
+                <button class="btnMtoExportar" type="submit" name="exporta">Exportar</button>
+                <button class="btnMtoVolver" type="submit" name="volver">Volver</button>
+            </form>
         </article>
 </main>

@@ -5,18 +5,13 @@
 </div>
 <main>
     <div class="ver1">
-        <article>
-            <a href="docs/201129CatalogoDeRequisitos.pdf" target="blank">Ver catálogo de requisitos</a>
-        <br>
-        <br>
-            <a href="docs/210102DiagramaDeCasosDeUso.pdf" target="blank">Ver diagrama de casos de uso</a>
-        <br>
-        <br>
-            <a href="docs/210102DiagramaDeClases.pdf" target="blank">Ver diagrama de clases</a>
-        <br>
-        <br>
-            <a href="docs/210102ArbolDeNavegación.pdf" target="blank">Ver ver árbol de navegación</a>
-        </article>
+        <a href="docs/201129CatalogoDeRequisitos.pdf" target="blank"><img src="webroot/media/requisitos.PNG"></a>
+        <a href="docs/210216DiagramaDeCasosDeUso.pdf" target="blank"><img src="webroot/media/casosUso.PNG"></a>
+        <a href="docs/diagramaDeClasesRaul.PNG" target="blank"><img src="docs/diagramaDeClasesRaul.PNG"></a>
+        <a href="docs/210102ArbolDeNavegación.pdf" target="blank"><img src="webroot/media/arbolNavegacion.PNG"></a>
+        <a href="docs/210102RelacionDeFicheros.pdf" target="blank"><img src="webroot/media/relacionFicheros.PNG" ></a>
+        <a href="docs/200113EstructuraDeAlmacenamiento.JPG" target="blank"><img src="webroot/media/estructuraDeAlmacenamiento.PNG"></a>
+        <a href="docs/201127ModeloFisicoDeDatos2021.pdf" target="blank"><img src="webroot/media/modelo.PNG"></a>
     </div>
     <div class="loginbox">
         <p class="pLogin">Iniciar sesión en la aplicación</p>
@@ -36,19 +31,5 @@
                 <button class="btnRegistro" type="submit" name="registrate">Regístrate</button>
             </div>
     </form>
-    </div>
-    <div class="ver2">
-        <article>
-            <a href="docs/210102RelacionDeFicheros.pdf" target="blank">Ver mapa web - relación de ficheros</a>
-        <br>
-        <br>
-            <a href="docs/200113EstructuraDeAlmacenamiento.JPG" target="blank">Ver estructura de almacenamiento</a>
-        <br>
-        <br>
-            <a href="docs/201127ModeloFisicoDeDatos2021.pdf" target="blank">Ver modelo físico de datos</a>
-        <br>
-        <br>
-            <a href="docs/diagramaDeClasesRaul.png" target="blank">Ver diagrama de clases (Actualizado semana a semana)</a>
-        </article>
     </div>
 </main>

@@ -9,22 +9,27 @@
     <form name="modificarPerfil" action="<?php echo $_SERVER['PHP_SELF'];?>" method="post">
             <div>
                 <label for="codDepartamento">Código del departamento</label>
-                <input type="text" name="codDepartamento">
+                <input type="text" name="codDepartamento" value="<?php echo $oDepartamento->getCodDepartamento(); ?>" readonly>
             </div>
         <br>
             <div>
                 <label for="descDepartamento">Descripción del departamento</label>
-                <input type="text" name="descDepartamento">
+                <input type="text" name="descDepartamento" value="<?php echo $oDepartamento->getDescDepartamento(); ?>" readonly>
+            </div>
+        <br>
+            <div>
+                <label for="fechaCreacion">Fecha de creación del departamento</label>
+                <input type="text" name="fechaCreacion" value="<?php echo date('d/m/Y',$oDepartamento->getFechaCreacionDepartamento()); ?>" readonly>
             </div>
         <br>
             <div>
                 <label for="volumenDeNegocio">Volumen de negocio</label>
-                <input type="text" name="volumenDeNegocio">
+                <input type="text" name="volumenDeNegocio" value="<?php echo $oDepartamento->getVolumenDeNegocio(); ?>" readonly>
             </div>
         <br>
             <div>
-                <label for="fechaBajaDepartamento">Fecha baja del departamento</label>
-                <input type="text" name="fechaBajaDepartamento">
+                <label for="fechaBaja">Fecha baja del departamento</label>
+                <input type="date" name="fechaBaja" value="<?php echo date('Y-m-d');?>">
             </div>
         <br>
             <div class="contenedorAceptar">

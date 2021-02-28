@@ -1,9 +1,12 @@
 <?php
+    
 if(isset ($_REQUEST["cancelar"])){//Si el usuario pulsa en el botón de cancelar.
     $_SESSION["paginaEnCurso"]=$controlador["mtoDepartamentos"];//Guardo en la variable de sesión la ruta del controlador del mantenimiento de departamentos.
     header("Location: index.php");//Recargo el index.
     exit;
 }
+
+$oDepartamento = DepartamentoPDO::datosDepartamentos($_SESSION["codDepartamento"]);
 
 define ('OBLIGATORIO',1); //Creo una constante $OBLIGATORIO y le asigno un 1.
 define ('MAX_FLOAT', 3.402823466E+38); //Creo una constante del máximo permitido en un campo float.
@@ -29,7 +32,7 @@ define ('MIN_FLOAT', -3.402823466E+38); //Creo una constante del mínimo permiti
     }
     
     if($entradaOk){
-        $oDepartamento = DepartamentoPDO::modificaDepartamento($_REQUEST["codUsuario"], $_REQUEST["descDepartamento"], $_REQUEST["volumenNegocio"]);
+        DepartamentoPDO::modificaDepartamento($_SESSION["codDepartamento"], $_REQUEST["descDepartamento"], $_REQUEST["volumenNegocio"]);
         $_SESSION["paginaEnCurso"]=$controlador["mtoDepartamentos"];
         header("Location: index.php");
         exit;
